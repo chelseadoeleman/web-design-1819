@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.button-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+form {
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border-style: none;
+}
+
+h1, legend {
+    font-size: 5em;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000; 
+    display: inline-block;
+    padding: 5em;
+    margin: .5em 0;
+    margin-right: .5em;
+    background-color: #a8ffd4;
+    border-style: none;
+    border-radius: .5em;
+    font-weight: 900;
+}
+
+button {
+    padding: 5em;
+    margin: 1em 0;
+    margin-right: .5em;
+    background-color: #a8ffd4;
+    border-style: none;
+    border-radius: .5em;
+    font-weight: 900;
+}
+
+a, button:focus {
+    background-color: #FFC56F;
+}
+
+label {
+    display: flex; 
+    font-size: 2.5em;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+input {
+    padding: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    display: inline-block;
+    border-radius: .5em;
+    border-style: solid;
+    border-color: #a8ffd4;
+    font-size: .5em;
+    font-weight: 600;
+}
+
+input:focus {
+    border-color: #FFC56F;
+    outline: 0;
+}
+
+span {
+    font-size: 1.5em;
+    color: #FFC56F;
+}
