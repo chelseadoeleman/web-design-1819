@@ -94,7 +94,7 @@ if (monthInput) {
                 const monthName = months[value - 1]
                 month.innerText = monthName
             }
-            if (target.value < Number(target.getAttribute('max'))) {
+            if (target.value + 1 < Number(target.getAttribute('max'))) {
                 target.value++
             } 
         } else {
@@ -144,6 +144,6 @@ function focusNextElement(event) {
         element.focus()
 
     }
-    
+
     state.previousKey = event.key
 }
