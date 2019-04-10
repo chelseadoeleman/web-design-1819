@@ -8,40 +8,28 @@
     <title>Accessable Datepicker</title>
 </head>
 <body>
-    <form action="/">
+    <form action="/time.html">
         <fieldset>
             <legend>Date Picker</legend>
 
             <label id="day">
                 Day
-                <input type="number" class="focussable" id="dayInput" min="1" max="31">
+                <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
             </label>
 
-            <span id="monthAbove"></span>
             <label id="month">
                 Month
-                <input type="number" class="focussable" id="monthInput" min="1" max="12" value="4">
+                <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
+                <span id="monthAbove"></span>
             </label>
 
             <label id="year">
                 Year
-                <input type="number" class="focussable"  id="yearInput" min="0" max="2100" value="2019">
-            </label>
-    
-
-            <button type="button" class="focussable">AM</button>
-            <button type="button" class="focussable">PM</button>
-
-            <label id="hours">
-                Hours
-                <input type="number" class="focussable"  id="hoursInput" min="1" max="12">
+                <input type="number" class="focussable keyUpEvent"  id="yearInput" min="0" max="2100" value="2019">
             </label>
 
-
-            <label id="minutes">
-                Minutes
-                <input type="number" class="focussable"  id="minutesInput" min="0" max="59">
-            </label>
+            <a href="/index.html" class="focussable">Back to home</a>
+            <button type="submit" class="focussable">Set time</button>
 
         </fieldset>
     </form>

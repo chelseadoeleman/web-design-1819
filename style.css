@@ -4,6 +4,7 @@ body, html {
 
 body {
     font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    background-color: #effff6;
     color: #000000;
 }
 
@@ -42,39 +43,54 @@ a {
     text-decoration: none;
     color: #000000; 
     display: inline-block;
-    padding: 5em;
+    padding: 4em;
+    font-size: 1.5em;
     margin: .5em 0;
     margin-right: .5em;
-    background-color: #a8ffd4;
     border-style: none;
     border-radius: .5em;
-    font-weight: 900;
+    font-weight: 800;
+    background-color: #a8ffd4;
 }
+
 
 button {
-    padding: 5em;
-    margin: 1em 0;
+    padding: 4em;
+    font-size: 1.5em;
+    margin: .5em 0;
     margin-right: .5em;
+    margin-bottom: 2em;
     background-color: #a8ffd4;
     border-style: none;
     border-radius: .5em;
     font-weight: 900;
 }
 
-a, button:focus {
-    background-color: #FFC56F;
+.clicked {
+    padding: 4em;
+    font-size: 1.5em;
+    margin: .5em 0;
+    margin-right: .5em;
+    background-color: #D0C5FF;
+    border-style: inset;
+    border-radius: .5em;
+    font-weight: 900;
+}
+
+a:focus, button:focus {
+    background-color: #D0C5FF;
+    outline: #D0C5FF;
 }
 
 label {
-    display: flex; 
+    display: block;
     font-size: 2.5em;
-    margin: 1em 0;
-    font-weight: 600;
+    font-weight: 600;   
 }
 
 input {
-    padding: 1em;
-    margin-left: 2em;
+    padding: .75em;
+    margin: 0 1em;
     margin-bottom: 2em;
     display: inline-block;
     border-radius: .5em;
@@ -85,11 +101,11 @@ input {
 }
 
 input:focus {
-    border-color: #FFC56F;
-    outline: 0;
+    border-color: #D0C5FF;
+    outline: #D0C5FF;
 }
 
 span {
-    font-size: 1.5em;
-    color: #FFC56F;
+    font-size: .5em;
+    color: #D0C5FF;
 }

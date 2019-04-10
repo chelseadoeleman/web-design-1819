@@ -1,4 +1,7 @@
 const monthInput = document.getElementById('monthInput')
+console.log(monthInput)
+// const buttonAm = document.getElementById('am')
+// const buttonPm = document.getElementById('pm')
 
 const months = [
     "January",
@@ -15,17 +18,69 @@ const months = [
     "December"
 ]
 
-monthInput.addEventListener('keyup', event => {
+const keyUpEvents = [
+    'y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'b', 'n', 'm', '{', ';', '|', ',', '.', '/', '}'
+]
 
-    const month = document.getElementById('monthAbove')
+const keyDownEvents = [
+    't', 'g', 'b', 'v', 'f', 'r', 'e', 'd', 'c', 'w', 's', 'x', 'q', 'a', 'z', '`'  
+]
 
-    month.innerText = ''
+const keyPlusses = document.querySelectorAll('.keyUpEvent')
+
+keyPlusses.forEach(keyPlus => {
+    keyPlus.addEventListener('keyup', event => {
+        const { key, target } = event
+        const matches = keyUpEvents.filter(keyEvent => keyEvent === key)
     
-    const value = event.target.value
-    const monthName = months[value - 1]
-
-    month.innerText = monthName
+        if (matches && matches.length > 0) {
+    
+            if (target.value < Number(target.getAttribute('max'))) {
+                target.value++
+            } 
+    
+        }
+    })
 })
+
+const keyMinuses = document.querySelectorAll('.keyUpEvent')
+
+keyMinuses.forEach(keyMin => {
+    keyMin.addEventListener('keyup', event => {
+        const { key, target } = event
+        const matches = keyDownEvents.filter(keyEvent => keyEvent === key)
+    
+        if (matches && matches.length > 0) {
+    
+            if (target.value > Number(target.getAttribute('min'))) {
+                target.value--
+            } 
+    
+        }
+    })
+})
+
+if (monthInput) {
+    monthInput.addEventListener('keyup', event => {
+        const { key, target } = event
+        const matches = keyUpEvents.filter(keyEvent => keyEvent === key)
+    
+        if (matches && matches.length > 0) {
+            const month = document.getElementById('monthAbove')
+        
+            month.innerText = ''
+        
+            const value = event.target.value
+            if (value) {
+                const monthName = months[value - 1]
+                month.innerText = monthName
+            }
+            if (target.value < Number(target.getAttribute('max'))) {
+                target.value++
+            } 
+        }
+    })
+}
 
 const focussables = document.querySelectorAll('.focussable')
     const state = {
