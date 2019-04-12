@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    background-color: #effff6;
+    color: #000000;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.button-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+form {
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border-style: none;
+}
+
+h1, legend {
+    font-size: 5em;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000; 
+    display: inline-block;
+    padding: 4em;
+    font-size: 1.5em;
+    margin: .5em 0;
+    margin-right: .5em;
+    border-style: none;
+    border-radius: .5em;
+    font-weight: 800;
+    background-color: #a8ffd4;
+}
+
+
+button {
+    padding: 4em;
+    font-size: 1.5em;
+    margin: .5em 0;
+    margin-right: .5em;
+    margin-bottom: 2em;
+    background-color: #a8ffd4;
+    border-style: none;
+    border-radius: .5em;
+    font-weight: 900;
+}
+
+.clicked {
+    padding: 4em;
+    font-size: 1.5em;
+    margin: .5em 0;
+    margin-right: .5em;
+    background-color: #D0C5FF;
+    border-radius: .5em;
+    font-weight: 900;
+}
+
+a:focus, button:focus {
+    background-color: #D0C5FF;
+    outline: #D0C5FF;
+}
+
+label {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 600;   
+}
+
+input {
+    padding: .75em;
+    margin: 0 1em;
+    margin-bottom: 2em;
+    display: inline-block;
+    border-radius: .5em;
+    border-style: solid;
+    border-color: #a8ffd4;
+    font-size: .5em;
+    font-weight: 600;
+}
+
+input:focus {
+    border-color: #D0C5FF;
+    outline: #D0C5FF;
+}
+
+span {
+    font-size: .5em;
+    color: #D0C5FF;
+}
