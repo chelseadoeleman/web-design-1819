@@ -36,97 +36,32 @@ npm install
 
 ## How to use
 
-In this application you are able to open the chatbox and chat with other people who are also using the chatbox. Firstly you have to choose a nickname, which can we whatever you like! Then you are able to chat, by typing a message in the input field. Don't forget to press send (or enter, for the ones who figured that one out)! The fun part is that some words will be replaced by emoji's, to make your text messages more fun! I guess...
-
-![Chatbox](./docs/app.png)
 
 ## Features
 
-Words will be replaced with emoji's on the server, however assigning the username with unique id's will be done on the client. Here is an overview with words that will be replaced with n emoji.
-```js
+## User scenario
 
-const emoticons = [
-    {name: 'api', emoticon: '🐒'},
-    {name: 'boom', emoticon: '🌳'},
-    {name: 'zon', emoticon: '☀️'},
-    {name: 'nederland', emoticon: '🇳🇱'},
-    {name: 'vakantie', emoticon: '🏝'},
-    {name: 'sneeuw', emoticon: '❄️'},
-    {name: 'ijs', emoticon: '🍦'},
-    {name: 'perzik', emoticon: '🍑'},
-    {name: 'banaan', emoticon: '🏝'},
-    {name: 'hou van jou', emoticon: '❤️'},
-    {name: 'auto', emoticon: '🚗'},
-    {name: 'vliegtuig', emoticon: '✈️'},
-    {name: 'voetbal', emoticon: '⚽️'},
-    {name: 'pizza', emoticon: '🍕'},
-    {name: 'banaan', emoticon: '🍌'},
-    {name: 'wintersport', emoticon: '⛷ 🏂'},
-    {name: 'tennis', emoticon: '🎾'},
-    {name: 'winter', emoticon: '☃️'},
-    {name: 'lente', emoticon: '🌸'},
-    {name: 'zomer', emoticon: '🌴'},
-    {name: 'herfst', emoticon: '🍄'},
-    {name: 'hockey', emoticon: '🏑'},
-    {name: 'fietsen', emoticon: '🚲'},
-    {name: 'regen', emoticon: '🌧'},
-    {name: 'raket', emoticon: '🚀'},
-    {name: 'oeps', emoticon: '🙈'},
-    {name: 'shit', emoticon: '💩'},
-    {name: 'muziek', emoticon: '🎶'},
-    {name: 'japan', emoticon: '⛩'},
-    {name: 'foto', emoticon: '📸'},
-    {name: 'douchen', emoticon: '🛁'},
-    {name: 'bier', emoticon: '🍻'},
-    {name: 'laptop', emoticon: '💻'}
-]
+## User Interface Design Principles
 
-```
-What I learned about sockets is that sending an ```io.emit``` will send an message to everyone and ```broadcast``` will send it to any other person, but the person the data is coming from (client). I used state to set the username and an unique user id and to let the user see this in the chat. I used an user id, because people can choose the same nickname/ username and I hadn't had a databse set up yet.
+1. You are able to book a hairdressers appointment, make this your #1 priority to make this clear for your user. Be kinda predictable, but ignore conventions.
 
-In the end I found it hard to come up with features to add to the application so I left it here. It will be nice to have something like an database behind it, so that the user will automatically come back in the chat as the person they were before. So their session isn't completely lost when they refresh the page. 
+4. Keep status and let users be in control of their flow. Give feedback on what will happen next.
 
+6. Give the user one input action. Like setting a date or choosing what kind of appointment.
 
-## Week 1
-<details>
-  <summary>What did I do in Week 1</summary>
-  See main readme
+9. Items should look how they behave. **! Beware of conventions**. 
 
-  For my concept see week 2
-</details>
+11. /
+12.  What is the most important step in your application? : Setting date, time and appointment info. Break it down to the essentials to defer cognitive load. 
 
-## Week 2
-<details>
-  <summary>What did I do in Week 2</summary>
+14. Divide actions into different steps. Like booking an appointment at the hair dresser.
 
-  ## Concept
+16. Give the user information about certain aspects/ features the user can do. Give them the possibility to turn this feature off (e.g. finder)
 
-  ![Concept](./docs/concept.JPG)
-
-  I want to use the twitter API for real-time data and connect it to the IUCN Red List Api. However I had to ask permission for an accesskey, but I haven't received an answer yet. If I cannot get an accesskey I will just filter all tweets to rhino's to see how much awareness they get. This I want to project on a map with the Mapbox Api. As an extra feature I would like to add an linechart where you can view the amount of tweets on a timeline. If I get to use the IUCN Red List Api the user would also be able to view this linechart for a specific animal.
-
-  <hr>
-  <i>More coming soon...</i>
-</details>
-
-## Week 3
-<details>
-  <summary>What did I do in Week 3</summary>
-
-  <hr>
-  <i>We're not there yet, coming soon...</i>
-</details>
 
 
 ## Checklist
-- [X] Setting up server with node.js and express
-- [X] Implement session with socket.io on server
-- [X] Replace words with emoji's
-- [X] Create username in chat
-- [X] Create unique users
-- [X] Divide code between server and client
-- [ ] Come up and create more features on the server
-- [ ] Set up localstorage with users and messages
+
 
 ## Resources
 
