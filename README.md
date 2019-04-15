@@ -6,9 +6,8 @@
 * **[How to install](#how-to-install)**
 * **[How to use](#how-to-use)**
 * **[Features](#features)**
-* **[Week 1](#week-1)**
-* **[Week 2](#week-2)**
-* **[Week 3](#week-3)**
+* **[User scenario](#user-scenario)**
+* **[User interface design principles](#user-interface-design-principles)**
 * **[Checklist](#checklist)**
 * **[Resources](#resources)**
 * **[License](#license)**
