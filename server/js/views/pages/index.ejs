@@ -5,13 +5,137 @@
 </head>
 <body>
     <main>
-        <h1>Date Picker</h1>
-        
-        <div class="button-wrapper">
-            <a href="/" class="focussable">Today</a>
-            <a href="/" class="focussable">Tomorrow</a>
-            <a href="/date" class="focussable">Pick another date</a>
-        </div>  
+        <section id="index">
+            <h1>Hairdresser</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+                justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            </p>
+
+            <a href="#appointment">Book an appointment</a>
+        </section>
+
+        <section id="appointment">
+            <h1>What do you want to do?</h1>
+            
+            <div class="button-wrapper">
+                <a href="#appointment" class="focussable">
+                    Colour
+                    <span>Colour your hair in any desired colour</span>
+                    <span>ca. 120 minutes</span>
+                </a>
+                <a href="#appointment" class="focussable">
+                    Cut 
+                    <span>Cut your hair in any desired cut</span>
+                    <span>ca. 30 minutes</span>
+                </a>
+            </div>  
+        </section>
+
+        <section id="date">
+            <form action="/">
+                <fieldset>
+                    <legend>Pick a day to book your appointment</legend>
+                    
+                    <label id="month">
+                            Month
+                            <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
+                            <span>Pick a month</span>
+                            <span id="monthAbove"></span>
+                    </label>
+                
+                    <label id="day">
+                        Day
+                        <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
+                        <span>Choose the day of your appointment</span>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="hairdresser">
+            <h1>Choose your favorite hairdresser</h1>
+            
+            <div class="button-wrapper">
+                <a href="/appointment" class="focussable">
+                    Lisa
+                    <span>Expert in haircoloring</span>
+                </a>
+                <a href="/appointment" class="focussable">
+                    Tim
+                    <span>Expert in anything</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="time">
+            <form action="/">
+                <fieldset>
+                    <legend>Pick the time of your appointment</legend>
+                
+                    <button type="button" class="focussable " id="am">AM</button>
+                    <button type="button" class="focussable " id="pm">PM</button>
+                
+                    <label id="hours">
+                        Hours
+                        <input type="number" class="focussable keyUpEvent"  id="hoursInput" min="1" max="12">
+                    </label>
+                
+                
+                    <label id="minutes">
+                        Minutes
+                        <input type="number" class="focussable keyUpEvent"  id="minutesInput" min="0" max="59">
+                    </label>
+                
+                    <a href="/" class="focussable">Set date</a>
+                    <button type="submit" class="focussable">Done</button>
+                
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="confirmation">
+            <h1>Almost there!</h1>
+            <p>Make sure the following information is correct!</p>
+            <ul>
+                <li>Type of appointment: Cut</li>
+                <li>Date of appointment: 10 april 2019</li>
+                <li>Your hairdresser: Tim</li>
+                <li>Time of your appointment: 12:30</li>
+            </ul>
+            <a href="/">Confirm</a>
+        </section>
+
+        <section id="progressbar">
+            <h2>Book an appointment</h2>
+            <ul>
+                <li>
+                    <a href="#appointment">Choose type of appointment</a>
+                </li>
+                <li>
+                    <a href="#date">Choose date</a>
+                </li>
+                <li>
+                    <a href="#hairdresser">Choose your favorite hairdresser</a>
+                </li>
+                <li>
+                    <a href="#time">Set time</a>
+                </li>
+                <li>
+                    <a href="#confirmation">Confirm appointment</a>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+                <a href="/">Cancel</a>
+                <a href="/"><</a>
+                <a href="/">></a>
+            </div>
+        </section>
+
     </main>
     <script src="/js/index.js"></script>
 </body>
