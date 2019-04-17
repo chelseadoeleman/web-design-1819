@@ -54,7 +54,10 @@
             </p>
 
             <a href="#appointment" class="focussable">Book an appointment</a>
-            <span class="explanation">Navigate buttons with the <i>spacebar</i> and press <i>enter</i> to select</span>
+            <span class="explanation">
+                Navigate buttons with the <i>spacebar</i> and press <i>enter</i> to select
+                <img src="/assets/space-enter.png" alt="space-enter">
+            </span>
         </section>
 
         <section id="appointment">
@@ -63,7 +66,7 @@
             <div class="button-wrapper">
 
                 <div class="individual-button">
-                    <a href="#appointment" class="focussable first-check">
+                    <a   href="#appointment" class="focussable first-check">
                         Colour
                     </a>
                     <span>Colour your hair in any desired colour</span>
@@ -85,33 +88,56 @@
             <form action="/">
                 <fieldset>
                     <legend>Pick a day to book your appointment</legend>
-
+                    
                     <div class="individual-button">
-                        <label id="month">
-                            Month
-                            <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
-                            <span id="monthAbove">April</span>
-                        </label>
-                        <span>Pick a month</span>
+                        <a href="#hairdresser" class="focussable">Today</a>
+                        <span>Make an appointment today (date)</span>
                     </div>
-
-                    <div class="individual-button"></div>
-                        <label id="day">
-                            Day
-                            <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
-                        </label>
-                        <span>Choose the day of your appointment</span>
+                    <div class="individual-button">
+                        <a href="#hairdresser" class="focussable">Tommorow</a>
+                        <span>Make an appointment tomorrow (date)</span>
+                    </div>
+                    <div class="individual-button">
+                        <a href="#date-manually" class="focussable">Set date manually</a>
+                        <span>Choose another date to make an appointment</span>
                     </div>
 
                 </fieldset>
-
-                <span class="explanation">
-                    Navigate with the left side of the keyboard to lower the time
-                    and with the right side to go up
-                </span>
             </form>
-            <a href="#hairdresser" class="focussable">Set date</a>
         </section>
+
+        <section id="date-manually">
+                <form action="/">
+                    <fieldset>
+                        <legend>Pick a day to book your appointment</legend>
+                        
+                        <div class="individual-button">
+                            <label id="month">
+                                Month
+                                <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
+                                <span id="monthAbove">April</span>
+                            </label>
+                            <span>Pick a month</span>
+                        </div>
+    
+                        <div class="individual-button"></div>
+                            <label id="day">
+                                Day
+                                <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
+                            </label>
+                            <span>Choose the day of your appointment</span>
+                        </div>
+    
+                    </fieldset>
+    
+                    <span class="explanation">
+                        Navigate with the left side of the keyboard to lower the date
+                        and with the right side to go up
+                        <img src="/assets/up-down.png" alt="space-enter">
+                    </span>
+                </form>
+                <a href="#hairdresser" class="focussable">Set date</a>
+            </section>
 
         <section id="hairdresser">
             <h1>Choose your favorite hairdresser</h1>
@@ -138,8 +164,17 @@
             <form action="/">
                 <fieldset>
                     <legend>Pick the time of your appointment</legend>
+
+                    <button type="button" class="focussable first-check">10.00</button>
+                    <button type="button" class="focussable second-check unavailable">11.00</button>
+                    <button type="button" class="focussable second-check">12.00</button>
+                    <button type="button" class="focussable second-check unavailable">13.00</button>
+                    <button type="button" class="focussable second-check unavailable">14.00</button>
+                    <button type="button" class="focussable second-check">15.00</button>
+                    <button type="button" class="focussable second-check unavailable">16.00</button>
+                    
                 
-                    <button type="button" class="focussable first-check">AM</button>
+                    <!-- <button type="button" class="focussable first-check">AM</button>
                     <button type="button" class="focussable second-check">PM</button>
                 
                     <label id="hours">
@@ -151,7 +186,7 @@
                     <label id="minutes">
                         Minutes
                         <input type="number" class="focussable keyUpEvent"  id="minutesInput" min="0" max="59">
-                    </label>
+                    </label> -->
                 
                     <a href="#confirmation" class="focussable">Set time</a>
                 
@@ -160,6 +195,7 @@
                 <span class="explanation">
                     Navigate with the left side of the keyboard to lower the time
                     and with the right side to go up
+                    <img src="/assets/up-down.png" alt="space-enter">
                 </span>
             </form>
         </section>

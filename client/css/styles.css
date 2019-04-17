@@ -24,8 +24,6 @@ section {
     padding: 0 3em;
 }
 
-
-
 .button-wrapper {
     display:flex;
     flex-direction: row;
@@ -66,6 +64,13 @@ p {
     text-align: center;
 }
 
+.explanation img {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: #090930; 
@@ -80,8 +85,8 @@ a {
     background-color: #DC3C81;
     background-image: linear-gradient(120deg, #FF4053, #DC3C81 80%);
     box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
-
 
 button {
     padding: 1em;
@@ -95,6 +100,7 @@ button {
     border-radius: .5em;
     font-weight: 900;
     box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 
 .clicked {
@@ -230,12 +236,11 @@ label span {
 }   
 
 #toggle {
-    /* opacity 0 so that it can be read by screen readers */
     opacity: 0;
 }
 
 #toggle:focus ~ #label {
-    border: 1px solid red;
+    border: 1px solid #FF4053;
 }
   
 #label {
@@ -269,4 +274,24 @@ label span {
 .switch-name {
     color: #ffffff;
     font-size: 1em;
+}
+
+.explanation {
+    transform: translateY(0);
+    animation: bounce 2.5s infinite both;
+    transform-origin: center;
+}
+
+.unavailable {
+    filter: grayscale(2);
+    cursor: not-allowed;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+
+    50% {
+        transform: translateY(2em);
+    }
 }
