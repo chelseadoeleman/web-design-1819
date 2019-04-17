@@ -5,71 +5,133 @@
 </head>
 <body>
     <main>
+        <section id="progressbar">
+            <label for="switch" class="switch-name">
+                    Turn off comments
+            </label>
+            <input id="toggle" type="checkbox" class="focussable"/>
+            <label id="label" for="toggle">
+              <span id="switch"></span>
+            </label>
+
+            <h2>Book an appointment</h2>
+            <ul>
+                <li>
+                    <a href="#appointment" class="focussable">Choose type of appointment</a>
+                </li>
+                <li>
+                    <a href="#date" class="focussable">Choose date</a>
+                </li>
+                <li>
+                    <a href="#hairdresser" class="focussable">Choose your favorite hairdresser</a>
+                </li>
+                <li>
+                    <a href="#time" class="focussable">Set time</a>
+                </li>
+                <li>
+                    <a href="#confirmation" class="focussable">Confirm appointment</a>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+                <a href="/" class="focussable">Cancel</a>
+                <a href="/" class="focussable"><</a>
+                <a href="/" class="focussable">></a>
+            </div>
+        </section>
+                
         <section id="index">
             <h1>Hairdresser</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor. Aenean massa. 
-                Cum sociis natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
-                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
-                justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            <p>
+                Je zoekt een goede kapper Amsterdam en misschien wel de beste kapper in Amsterdam? 
+                Zoek niet verder want ons enige doel is om jouw haar iedere dag mooi te laten zitten, 
+                met – als je wilt – een perfecte kleuring.
+                Volgens veel van onze klanten vindt je de beste kapper van Amsterdam aan één van de mooiste grachten 
+                in hartje Centrum: in een rustige omgeving ontvangen wij je met veel persoonlijke aandacht.
+                Elkaars vertrouwen winnen lukt niet in een half uurtje. Daarom nemen wij de tijd, luisteren en 
+                zorgen er altijd voor dat je haar er beter uit ziet. Iedere behandeling duurt dan ook minimaal 
+                1 uur want de kapper wil je immers de volledige aandacht geven en wil weten wat je wensen zijn. 
+                Je moet hem of haar volledig kunnen vertrouwen.
             </p>
 
-            <a href="#appointment">Book an appointment</a>
+            <a href="#appointment" class="focussable">Book an appointment</a>
+            <span class="explanation">Navigate buttons with the <i>spacebar</i> and press <i>enter</i> to select</span>
         </section>
 
         <section id="appointment">
             <h1>What do you want to do?</h1>
             
             <div class="button-wrapper">
-                <a href="#appointment" class="focussable">
-                    Colour
+
+                <div class="individual-button">
+                    <a href="#appointment" class="focussable first-check">
+                        Colour
+                    </a>
                     <span>Colour your hair in any desired colour</span>
                     <span>ca. 120 minutes</span>
-                </a>
-                <a href="#appointment" class="focussable">
-                    Cut 
+                </div>
+                <div class="individual-button">
+                    <a href="#appointment" class="focussable second-check">
+                        Cut 
+                    </a>
                     <span>Cut your hair in any desired cut</span>
                     <span>ca. 30 minutes</span>
-                </a>
+                </div>
             </div>  
+
+            <a href="#date" class="focussable">Done</a>
         </section>
 
         <section id="date">
             <form action="/">
                 <fieldset>
                     <legend>Pick a day to book your appointment</legend>
-                    
-                    <label id="month">
+
+                    <div class="individual-button">
+                        <label id="month">
                             Month
                             <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
-                            <span>Pick a month</span>
-                            <span id="monthAbove"></span>
-                    </label>
-                
-                    <label id="day">
-                        Day
-                        <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
+                            <span id="monthAbove">April</span>
+                        </label>
+                        <span>Pick a month</span>
+                    </div>
+
+                    <div class="individual-button"></div>
+                        <label id="day">
+                            Day
+                            <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
+                        </label>
                         <span>Choose the day of your appointment</span>
-                    </label>
+                    </div>
+
                 </fieldset>
+
+                <span class="explanation">
+                    Navigate with the left side of the keyboard to lower the time
+                    and with the right side to go up
+                </span>
             </form>
+            <a href="#hairdresser" class="focussable">Set date</a>
         </section>
 
         <section id="hairdresser">
             <h1>Choose your favorite hairdresser</h1>
             
             <div class="button-wrapper">
-                <a href="/appointment" class="focussable">
-                    Lisa
+                <div class="individual-button">
+                    <a href="#hairdresser" class="focussable first-check">
+                        Lize
+                    </a>
                     <span>Expert in haircoloring</span>
-                </a>
-                <a href="/appointment" class="focussable">
-                    Tim
+                </div>
+                <div class="individual-button">
+                    <a href="#hairdresser" class="focussable second-check">
+                        Tim
+                    </a>
                     <span>Expert in anything</span>
-                </a>
+                </div>
             </div>
+
+            <a href="#time" class="focussable">Choose hairdresser</a>
         </section>
 
         <section id="time">
@@ -77,8 +139,8 @@
                 <fieldset>
                     <legend>Pick the time of your appointment</legend>
                 
-                    <button type="button" class="focussable " id="am">AM</button>
-                    <button type="button" class="focussable " id="pm">PM</button>
+                    <button type="button" class="focussable first-check">AM</button>
+                    <button type="button" class="focussable second-check">PM</button>
                 
                     <label id="hours">
                         Hours
@@ -91,10 +153,14 @@
                         <input type="number" class="focussable keyUpEvent"  id="minutesInput" min="0" max="59">
                     </label>
                 
-                    <a href="/" class="focussable">Set date</a>
-                    <button type="submit" class="focussable">Done</button>
+                    <a href="#confirmation" class="focussable">Set time</a>
                 
                 </fieldset>
+
+                <span class="explanation">
+                    Navigate with the left side of the keyboard to lower the time
+                    and with the right side to go up
+                </span>
             </form>
         </section>
 
@@ -107,33 +173,7 @@
                 <li>Your hairdresser: Tim</li>
                 <li>Time of your appointment: 12:30</li>
             </ul>
-            <a href="/">Confirm</a>
-        </section>
-
-        <section id="progressbar">
-            <h2>Book an appointment</h2>
-            <ul>
-                <li>
-                    <a href="#appointment">Choose type of appointment</a>
-                </li>
-                <li>
-                    <a href="#date">Choose date</a>
-                </li>
-                <li>
-                    <a href="#hairdresser">Choose your favorite hairdresser</a>
-                </li>
-                <li>
-                    <a href="#time">Set time</a>
-                </li>
-                <li>
-                    <a href="#confirmation">Confirm appointment</a>
-                </li>
-            </ul>
-            <div class="button-wrapper">
-                <a href="/">Cancel</a>
-                <a href="/"><</a>
-                <a href="/">></a>
-            </div>
+            <a href="/" class="focussable">Confirm</a>
         </section>
 
     </main>

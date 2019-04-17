@@ -8,6 +8,7 @@ body {
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #000000;
+    line-height: 1.5em;
 }
 
 section {
@@ -51,11 +52,13 @@ h1, legend {
     margin: 0;
     margin-bottom: 1em;
     text-align: center;
+    line-height: 1.25em;
 }
 
 h2 {
     font-size: 2em;
-    color: #c9c9c9;
+    color: #DC3C81;
+    font-weight: bold;
 }
 
 p {
@@ -70,7 +73,7 @@ a {
     padding: 1em;
     font-size: 1.5em;
     margin: .5em 0;
-    margin-right: .5em;
+    /* margin-right: .5em; */
     border-style: none;
     border-radius: .5em;
     font-weight: 800;
@@ -85,7 +88,6 @@ button {
     color: #090930;
     font-size: 1.5em;
     margin: .5em 0;
-    margin-right: .5em;
     margin-bottom: 2em;
     background-color: #DC3C81;
     background-image: linear-gradient(120deg, #FF4053, #DC3C81 80%);
@@ -99,14 +101,15 @@ button {
     padding: 1em;
     font-size: 1.5em;
     margin: .5em 0;
-    margin-right: .5em;
     background-color: #FAAF57;
+    background-image: linear-gradient(120deg, #FF4053, #FAAF57 80%);
     border-radius: .5em;
     font-weight: 900;
 }
 
 a:focus, button:focus {
     background-color: #FAAF57;
+    background-image: linear-gradient(120deg, #FF4053, #FAAF57 80%);
     outline: #FAAF57;
 }
 
@@ -119,13 +122,13 @@ label {
 input {
     padding: .75em;
     margin: 0 1em;
-    margin-bottom: 2em;
     display: inline-block;
     border-radius: .5em;
     border-style: solid;
     border-color: #DC3C81;
     font-size: .5em;
     font-weight: 600;
+    text-align: center;
 }
 
 input:focus {
@@ -136,13 +139,27 @@ input:focus {
 ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 span {
-    font-size: .5em;
+    font-size: 1em;
     color: #FAAF57;
+    max-width: 75%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: .5em;
 }
 
+
+label span {
+    font-size: .5em;
+    color: #FAAF57;
+    max-width: 75%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: .5em;
+}
 
 #progressbar {
     position: fixed;
@@ -166,10 +183,90 @@ span {
     margin: 1em;
 }
 
+#progressbar ul li a:focus,
+#progressbar ul li a:hover {
+    color: #DC3C81;
+}
+
+#progressbar a:focus {
+    color: #DC3C81;
+}
+
 #progressbar a {
     background-color: transparent;
     background-image: none;
     color: #ffffff;
     padding: 0;
     margin: 1em;
+    box-shadow: none;
+}
+
+.individual-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.individual-button #month span {
+    display: inline-block;
+    min-width: 5.5em;
+    font-weight: 800;
+    color: #4359FF;
+}
+
+.individual-button #month {
+    display: flex;
+    align-items: center;
+}
+
+#time form fieldset label {
+    margin-bottom: 1em;
+}
+
+#time form fieldset label {
+    margin-bottom: 1em;
+}   
+
+#toggle {
+    /* opacity 0 so that it can be read by screen readers */
+    opacity: 0;
+}
+
+#toggle:focus ~ #label {
+    border: 1px solid red;
+}
+  
+#label {
+    display: inline-block;
+    background: #4359FF;
+    width: 1.5em;
+    height: .75em;
+    border-radius: 0.5em;
+    position: relative;
+    cursor: pointer;
+    background: #4359FF;
+}
+
+#switch {
+    position: absolute;
+    padding: .65em;
+    margin-top: 0.10em;
+    margin-left: 0.10em;
+    border-radius: 50%;
+    background: #DC3C81;
+    box-shadow: 5px 0px 28px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 0.2s ease-in;
+}
+
+#toggle:checked ~ #label #switch {
+    background: rgb(255, 136, 0);
+    transform: translatex(1.5em);
+    transition: transform 0.2s ease-in;
+}
+
+.switch-name {
+    color: #ffffff;
+    font-size: 1em;
 }

@@ -1,29 +1,5 @@
-const monthInput = document.getElementById('monthInput')
-const buttonAm = document.getElementById('am')
-const buttonPm = document.getElementById('pm')
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
-const keyUpEvents = ['y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'b', 'n', 'm', '{', ';', '|', ',', '.', '/', '}']
-const keyDownEvents = ['t', 'g', 'b', 'v', 'f', 'r', 'e', 'd', 'c', 'w', 's', 'x', 'q', 'a', 'z', '`']
-const keyPlusses = document.querySelectorAll('.keyUpEvent')
-const keyMinuses = document.querySelectorAll('.keyUpEvent')
-const focussables = document.querySelectorAll('.focussable')
-const state = {
-    focussedElement: null,
-    previousKey: null,
-}
+const buttonAm = document.querySelector('.first-check')
+const buttonPm = document.querySelector('.second-check')
 
 if(buttonAm || buttonPm) {
     buttonAm.addEventListener('click', event => {
@@ -50,6 +26,26 @@ if(buttonAm || buttonPm) {
     })
 }
 
+
+const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+const keyUpEvents = ['y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'b', 'n', 'm', '{', ';', '|', ',', '.', '/', '}', 'Enter']
+const keyDownEvents = ['t', 'g', 'b', 'v', 'f', 'r', 'e', 'd', 'c', 'w', 's', 'x', 'q', 'a', 'z', '`']
+const keyPlusses = document.querySelectorAll('.keyUpEvent')
+const keyMinuses = document.querySelectorAll('.keyUpEvent')
+const eventKeys = [...keyUpEvents, ...keyDownEvents]
 
 keyPlusses.forEach(keyPlus => {
     keyPlus.addEventListener('keyup', event => {
@@ -78,6 +74,8 @@ keyMinuses.forEach(keyMin => {
         }
     })
 })
+
+const monthInput = document.getElementById('monthInput')
 
 if (monthInput) {
     monthInput.addEventListener('keyup', event => {
@@ -111,6 +109,13 @@ if (monthInput) {
     })
 }
 
+
+const focussables = document.querySelectorAll('.focussable')
+const state = {
+    focussedElement: null,
+    previousKey: null,
+}
+
 window.addEventListener('keydown', focusNextElement)
 
 focussables.forEach(focussable => {
@@ -122,6 +127,9 @@ function focusNextElement(event) {
     if (event.key !== 'Shift' && event.key !== ' ') {
         return
     }
+
+    event.preventDefault()
+
     const { previousKey, focussedElement } = state
     const currentIndex = focussedElement
         ? [...focussables].findIndex(focussable => focussable === focussedElement)
@@ -147,3 +155,27 @@ function focusNextElement(event) {
 
     state.previousKey = event.key
 }
+const toggle = document.getElementById('toggle')
+
+function onToggleFocus({ target }) {
+    if (target) {
+        target.addEventListener('keydown', ({ key }) => {
+            if (eventKeys.includes(key)) {
+                target.click()
+            }
+        })
+    }
+}
+
+toggle.addEventListener('focus', onToggleFocus)
+
+toggle.addEventListener('change', event => {
+    const target = event.target.checked
+    if(target) {
+        const explanations = document.querySelectorAll('.explanation')
+        Array.from(explanations).forEach(explanation => explanation.setAttribute('style', 'opacity: 0;'))
+    } else {
+        const explanations = document.querySelectorAll('.explanation')
+        Array.from(explanations).forEach(explanation => explanation.setAttribute('style', 'opacity: 1;'))
+    }
+})
