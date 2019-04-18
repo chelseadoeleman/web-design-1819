@@ -286,6 +286,7 @@ label span {
     filter: grayscale(2);
     cursor: not-allowed;
 }
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0); 

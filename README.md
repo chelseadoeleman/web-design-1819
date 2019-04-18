@@ -49,20 +49,20 @@ When opening the website Marijn is able to navigate the site quite easily with h
 
 ## User Interface Design Principles
 
-1. You are able to book a hairdressers appointment, make this your #1 priority to make this clear for your user. Be kinda predictable, but ignore conventions.
+* 1. You are able to book a hairdressers appointment, make this your #1 priority to make this clear for your user. Be kinda predictable, but ignore conventions.
 
-4. Keep status and let users be in control of their flow. Give feedback on what will happen next.
+* 4. Keep status and let users be in control of their flow. Give feedback on what will happen next.
 
-6. Give the user one input action. Like setting a date or choosing what kind of appointment.
+* 6. Give the user one input action. Like setting a date or choosing what kind of appointment.
 
-9. Items should look how they behave. **! Beware of conventions**. 
+* 9. Items should look how they behave. **! Beware of conventions**. 
 
-11. /
-12.  What is the most important step in your application? : Setting date, time and appointment info. Break it down to the essentials to defer cognitive load. 
+* 11. / 
+    12.  What is the most important step in your application? : Setting date, time and appointment info. Break it down to   the essentials to defer cognitive load. 
 
-14. Divide actions into different steps. Like booking an appointment at the hair dresser.
+* 14. Divide actions into different steps. Like booking an appointment at the hair dresser.
 
-16. Give the user information about certain aspects/ features the user can do. Give them the possibility to turn this feature off (e.g. finder)
+* 16. Give the user information about certain aspects/ features the user can do. Give them the possibility to turn this feature off (e.g. finder)
 
 
 
