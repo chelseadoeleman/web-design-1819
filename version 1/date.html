@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <title>Accessable Datepicker</title>
+</head>
+<body>
+    <form action="/time.html">
+        <fieldset>
+            <legend>Date Picker</legend>
+
+            <label id="day">
+                Day
+                <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10">
+            </label>
+
+            <label id="month">
+                Month
+                <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4">
+                <span id="monthAbove"></span>
+            </label>
+
+            <label id="year">
+                Year
+                <input type="number" class="focussable keyUpEvent"  id="yearInput" min="0" max="2100" value="2019">
+            </label>
+
+            <a href="/index.html" class="focussable">Back to home</a>
+            <button type="submit" class="focussable">Set time</button>
+            <button type="submit" class="focussable">Done</button>
+
+        </fieldset>
+    </form>
+
+<script src="/script.js"></script>
+</body>
+</html>

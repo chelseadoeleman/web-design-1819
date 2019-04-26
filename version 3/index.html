@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Accessible datepicker">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Accessible datepicker</title>
+</head>
+<body>
+    <main>
+              
+        <section id="index">
+            <h1>Hairdresser</h1>
+            <p>
+                Je zoekt een goede kapper Amsterdam en misschien wel de beste kapper in Amsterdam? 
+                Zoek niet verder want ons enige doel is om jouw haar iedere dag mooi te laten zitten, 
+                met – als je wilt – een perfecte kleuring.
+            </p>
+
+            <a href="#appointment" class="focussable">Book an appointment</a>
+            <span class="explanation">
+                Navigate buttons with the <i>spacebar</i> and press <i>enter</i> to select
+                <img src="/assets/space-enter.png" alt="space-enter">
+            </span>
+        </section>
+
+        <section id="appointment">
+            <h1>What do you want to do?</h1>
+            
+            <div class="button-wrapper">
+
+                <div class="individual-button">
+                    <a   href="#appointment" class="focussable first-check">
+                        Colour
+                    </a>
+                    <span>Colour your hair in any desired colour</span>
+                    <span>ca. 120 minutes</span>
+                </div>
+                <div class="individual-button">
+                    <a href="#appointment" class="focussable second-check">
+                        Cut 
+                    </a>
+                    <span>Cut your hair in any desired cut</span>
+                    <span>ca. 30 minutes</span>
+                </div>
+            </div>  
+
+            <a href="#date" class="focussable">Done</a>
+        </section>
+
+        <section id="date">
+            <form action="/">
+                <fieldset>
+                    <legend>Pick a day to book your appointment</legend>
+                    
+                    <div class="individual-button">
+                        <a href="#hairdresser" class="focussable">Today</a>
+                        <span>Make an appointment today (date)</span>
+                    </div>
+                    <div class="individual-button">
+                        <a href="#hairdresser" class="focussable">Tommorow</a>
+                        <span>Make an appointment tomorrow (date)</span>
+                    </div>
+                    <div class="individual-button">
+                        <a href="#date-manually" class="focussable">Set date manually</a>
+                        <span>Choose another date to make an appointment</span>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="date-manually">
+                <form action="/">
+                    <fieldset>
+                        <legend>Pick a day to book your appointment</legend>
+                        
+                        <div class="date-wrapper">
+                            <div class="individual-button">
+                                <label id="month">
+                                    Month
+                                    <select name="month" id="monthInput" size="12" class="focussable">
+                                        <option value="january" selected class="selected keyUpEvent">January</option>
+                                        <option value="february" class="keyUpEvent">February</option>
+                                        <option value="march" class="keyUpEvent">March</option>
+                                        <option value="april" class="keyUpEvent">April</option>
+                                        <option value="may" class="keyUpEvent">May</option>
+                                        <option value="june" class="keyUpEvent">June</option>
+                                        <option value="july" class="keyUpEvent">July</option>
+                                        <option value="august" class="keyUpEvent">August</option>
+                                        <option value="september" class="keyUpEvent">September</option>
+                                        <option value="october" class="keyUpEvent">October</option>
+                                        <option value="november" class="keyUpEvent">November</option>
+                                        <option value="december" class="keyUpEvent">December</option>
+                                    </select>
+                                    <!-- <input type="number" class="focussable keyUpEvent" id="monthInput" min="1" max="12" value="4"> -->
+                                    <!-- <span id="monthAbove">April</span> -->
+                                </label>
+                                <span>Pick a month</span>
+                            </div>
+                        
+                            <div class="individual-button">
+                                <label id="day">
+                                    Day
+                                    <select name="day" id="dayInput" size="31" class="focussable">
+                                        <option value="1" class="keyUpEvent" selected>1</option>
+                                        <option value="2" class="keyUpEvent">2</option>
+                                        <option value="3" class="keyUpEvent">3</option>
+                                        <option value="4" class="keyUpEvent">4</option>
+                                        <option value="5" class="keyUpEvent">5</option>
+                                        <option value="6" class="keyUpEvent">6</option>
+                                        <option value="7" class="keyUpEvent">7</option>
+                                        <option value="8" class="keyUpEvent">8</option>
+                                        <option value="9" class="keyUpEvent">9</option>
+                                        <option value="10" class="keyUpEvent">10</option>
+                                        <option value="11" class="keyUpEvent">11</option>
+                                        <option value="12" class="keyUpEvent">12</option>
+                                        <option value="13" class="keyUpEvent">13</option>
+                                        <option value="14" class="keyUpEvent">14</option>
+                                        <option value="15" class="keyUpEvent">15</option>
+                                        <option value="16" class="keyUpEvent">16</option>
+                                        <option value="17" class="keyUpEvent">17</option>
+                                        <option value="18" class="keyUpEvent">18</option>
+                                        <option value="19" class="keyUpEvent">19</option>
+                                        <option value="20" class="keyUpEvent">20</option>
+                                        <option value="21" class="keyUpEvent">21</option>
+                                        <option value="22" class="keyUpEvent">22</option>
+                                        <option value="23" class="keyUpEvent">23</option>
+                                        <option value="24" class="keyUpEvent">24</option>
+                                        <option value="25" class="keyUpEvent">25</option>
+                                        <option value="26" class="keyUpEvent">26</option>
+                                        <option value="27" class="keyUpEvent">27</option>
+                                        <option value="28" class="keyUpEvent">28</option>
+                                        <option value="29" class="keyUpEvent">29</option>
+                                        <option value="30" class="keyUpEvent">30</option>
+                                        <option value="31" class="keyUpEvent">31</option>
+                                    </select>
+                                    <!-- <input type="number" class="focussable keyUpEvent" id="dayInput" min="1" max="31" value="10"> -->
+                                </label>
+                                <span>Choose the day of your appointment</span>
+                            </div>
+                        </div>
+    
+                    </fieldset>
+
+                </form>
+                <span class="explanation">
+                    Navigate the boxes with the arrow keys to go up and down. 
+                    Navigate with the spacebar to go to the next step and to select a date
+                    <img src="/assets/arrows.png" alt="arrows">
+                </span>
+
+                <span class="setDate"></span>
+                <a href="#hairdresser" class="focussable">Set date</a>
+            </section>
+
+        <section id="hairdresser">
+            <h1>Choose your favorite hairdresser</h1>
+            
+            <div class="button-wrapper">
+                <div class="individual-button">
+                    <a href="#hairdresser" class="focussable first-check">
+                        Lize
+                    </a>
+                    <span>Expert in haircoloring</span>
+                </div>
+                <div class="individual-button">
+                    <a href="#hairdresser" class="focussable second-check">
+                        Tim
+                    </a>
+                    <span>Expert in anything</span>
+                </div>
+            </div>
+
+            <a href="#time" class="focussable">Choose hairdresser</a>
+        </section>
+
+        <section id="time">
+            <form action="/">
+                <fieldset>
+                    <legend>Pick the time of your appointment</legend>
+
+                    <button type="button" class="focussable first-check">10.00</button>                    
+                    <button type="button" class="focussable second-check">12.00</button>                    
+                    <button type="button" class="focussable second-check">15.00</button>
+                    
+                
+                    <!-- <button type="button" class="focussable first-check">AM</button>
+                    <button type="button" class="focussable second-check">PM</button>
+                
+                    <label id="hours">
+                        Hours
+                        <input type="number" class="focussable keyUpEvent"  id="hoursInput" min="1" max="12">
+                    </label>
+                
+                
+                    <label id="minutes">
+                        Minutes
+                        <input type="number" class="focussable keyUpEvent"  id="minutesInput" min="0" max="59">
+                    </label> -->
+                
+                    <a style="display: block; width: 20%; margin: 0 auto;" href="#confirmation" class="focussable">Set time</a>
+                
+                </fieldset>
+
+                <!-- <span class="explanation">
+                    Navigate with the left side of the keyboard to lower the time
+                    and with the right side to go up
+                    <img src="/assets/up-down.png" alt="space-enter">
+                </span> -->
+            </form>
+        </section>
+
+        <section id="confirmation">
+            <h1>Almost there!</h1>
+            <p>Make sure the following information is correct!</p>
+            <ul>
+                <li>Type of appointment: Cut</li>
+                <li>Date of appointment: 10 april 2019</li>
+                <li>Your hairdresser: Tim</li>
+                <li>Time of your appointment: 12:30</li>
+            </ul>
+            <a href="/" class="focussable">Confirm</a>
+        </section>
+
+        <section id="progressbar">
+                <label for="switch" class="switch-name">
+                        Turn off comments
+                </label>
+                <input id="toggle" type="checkbox" class="focussable"/>
+                <label id="label" for="toggle">
+                  <span id="switch"></span>
+                </label>
+    
+                <h2>Book an appointment</h2>
+                <ul>
+                    <li>
+                        <a href="#appointment" class="focussable">Choose type of appointment</a>
+                        <!-- <span style="display: block; margin: 0 auto;">Cut</span> -->
+                    </li>
+                    <li>
+                        <a href="#date" class="focussable">Choose date</a>
+                    </li>
+                    <li>
+                        <a href="#hairdresser" class="focussable">Choose your favorite hairdresser</a>
+                    </li>
+                    <li>
+                        <a href="#time" class="focussable">Set time</a>
+                    </li>
+                    <li>
+                        <a href="#confirmation" class="focussable">Confirm appointment</a>
+                    </li>
+                </ul>
+                <div class="button-wrapper">
+                    <a href="/" class="focussable">Cancel</a>
+                    <a href="/" class="focussable"><</a>
+                    <a href="/" class="focussable">></a>
+                </div>
+            </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
