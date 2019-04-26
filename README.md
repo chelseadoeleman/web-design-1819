@@ -77,8 +77,36 @@ This is my first version of a datepicker where I divided a datepicker into multi
 
 ## Feedback
 
+**NOTE** Some of the feedback is actually notated in Dutch and has to be updated to English.
+
+**Own feedback**
 *   Give some sort of explanation for certain feature, that the user might not understand. For example the **finder** interface on Mac OS. Where the user is able to make his own navigation and how much explantion they would like at certain icons.
 * The datepicker is a very usefull user case for Marijn, so try to itterate on this. Think of a concept around it.
+
+**Things to know about Marijn**
+Unfortunately Marijn wasn't able to make it the first week, but luckily we could ask Vasilis some questions about Marijn
+
+* Macbook pro
+* Sticky keys
+* Gebruikt maar 1 hand (linker)
+* Moeite met fijne motoriek
+* Optillen van hand is moeilijk
+* Eye tracking is een gaaf idee
+* Add nonsense -> Test veel
+* Moeilijk om te verstaan dus spraak gestuurd is niet handig  -> vragen of het volgens hem eventueel wel kan.
+* Aan de hand van emoties of bepaalde geluiden kan Marijn dingen wel duidelijk maken, tijdens het testen.
+
+* Spastisch -> gespannen spieren
+* Date picker itereren
+
+* Gebruikt de spatiebalk om te scrollen
+
+* Maakt gebruik van access keys? - Niet zeker
+* Hoe navigeer je door priegelige linkjes?
+
+* Doet alles met het toetsenbord
+* Bouw meerdere kleine features die nuttig kunnen zijn en maak iteraties
+* Maak een hele pagina accessible?
 
 </details>
 
@@ -88,7 +116,17 @@ This is my first version of a datepicker where I divided a datepicker into multi
 For my concept I came up with making an appointment at the hairdresser, because this seemed like a basic thing Marijn will probably do, whether he has a hairdresser at home or he goes to visit one.
 I still divided the whole process into multiple steps and made a progressbar on the side where he can track his position when navigating the page. To see how many steps he has to accomplish before he has an appointment.
 
-He is also able to use the spacebar to navigate the page instead of just tab, to make certain elements focussable. I also kept in the feature of dividing the keyboard into two section to increase and decrease the value of the input fields, where he has to fill in the date.
+He is also able to use the spacebar to navigate the page instead of just tab, to make certain elements focussable. I also kept in the feature of dividing the keyboard into two section to increase and decrease the value of the input fields, where he has to fill in the date. 
+
+Here are some elements of the page that are the most important.
+
+![buttons](./docs/buttonsv2.png)
+
+![date](./docs/datev2.png)
+
+On this page you can see some sort of explanation how the user is able to navigate some certain features. The user is also able to turn this off, when things are clear enough.
+
+![time](./docs/timev2.png)
 
 This week we actually got to test with Marijn. 
 **NOTE** the feedback is actually notated in Dutch and has to be updated to English.
@@ -99,6 +137,15 @@ This week we actually got to test with Marijn.
 - Tab werkt niet lekker in safari.
 - Pijltjes toetsen ‘H’ ‘J’ ‘K’ ’L’ om te navigeren, beter dan 'A' 'S' 'D' 'W'.
 - Gebruikt liever pijltjes toetsen voor een drag & drop
+- Iets doen met programmeer taal - want Marijn is een developer.
+- Let op case sensitivity (CAPS LOCK) toLowerCase( ).
+- Zo min mogelijk intikken - geen spaties, komma’s, punten, etc.
+- Maak onderdelen die niet over het hele scherm verspreid zijn, want dan moet Marijn ver navigeren.
+- Native form controls werken vaak goed - nog meer optimaliseren.
+- Vergeet niet te stress testen - te hoge waardes invullen.
+- Bij een geboortedatum is een dropdown niet handig.
+- Geboorte jaar interessante use case.
+- Gebruikt de touch bar om terug te gaan.
 
 **Eigen feedback tijdens de observatie**
 - Spatiebalk is prima om te navigeren.
@@ -109,23 +156,11 @@ This week we actually got to test with Marijn.
 
 **Verbeter punten**
 - Input kan niet juist ingevoerd worden
-- Navigeren gaat moeizaam misschien balk aan de zijkant weghalen?
+- Navigeren gaat moeizaam misschien de sidebar aan de zijkant weghalen? Of onderaan de pagina zetten, zodat hij gelijk kan beginnen met navigeren in plaats van vast zitten in de navigatie van de sidebar.
 - Uitleg groter maken.
 - Tikt vaak 2 toetsen tegelijk in - andere toetsen uitzetten?
 - Laat zien wat de datum is.
 - Maakt gebruik van safari als browser ipv chrome.
-
-
-- Iets doen met programmeer taal - want Marijn is een developer.
-- Let op case sensitivity (CAPS LOCK) toLowerCase( )
-- Zo min mogelijk intikken - geen spaties, komma’s, punten, etc.
-- Maak onderdelen die niet over het hele scherm verspreid zijn, want dan moet Marijn ver navigeren.
-- Native form controls werken vaak goed - nog meer optimaliseren.
-- Vergeet niet te stress testen - te hoge waardes invullen.
-
-- Bij een geboortedatum is een dropdown niet handig
-- Geboorte jaar interessante use case
-- Gebruikt de touch bar om terug te gaan
 
 
 </details>
