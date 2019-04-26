@@ -38,7 +38,7 @@ npm install
 
 ## User scenario
 
-Marijn (age) works as a developer. But has a handicap called being physically motor impaired which causes tremors and muscle rigidity. He works always with a macbook pro and uses sticky keys to help him navigate the keyboard. He is can only navigate the keyboard with his left hand. Especially fine motor skills are a difficulty for Marijn, so lifting his hand takes up a lot of energy. Because all his muscles are affected he sometimes has trouble with speech which doesn’t make him always comprehendible.
+Marijn works as a developer. But has a handicap called being physically motor impaired which causes tremors and muscle rigidity. He works always with a macbook pro and uses sticky keys to help him navigate the keyboard. He is can only navigate the keyboard with his left hand. Especially fine motor skills are a difficulty for Marijn, so lifting his hand takes up a lot of energy. Because all his muscles are affected he sometimes has trouble with speech which doesn’t make him always comprehendible.
 
 In two days Marijn has a wedding he has to attend to, naturally he would like to look his best. To achieve this chique look he would like to have his hair done differently before the wedding. 
 The best day to do this is on the day of the big event, because then it would look its best. Luckily Marijns hairdresser has the option to book an appointment online. Because Marijn is at work he wants to do this quickly so he can resume his daily tasks. Marijn can only use his left hand and still not at its full extent because he suffers from tremors and muscle rigidity. 
@@ -172,6 +172,12 @@ This week we actually got to test with Marijn.
 This week I solely focused on making the buttons bigger, so that Marijn is also able to use his trackpad to navigate through the application and adding hover styles that were previously only focus styles, because I thought he would only use his keyboard. 
 
 The I tried to make an dropdown where he will be able to use the right side to of the keyboard to go up in the dropdown and left side to go down. However I found that native form controls are pretty hard to manipulate. Also you would lose the feature where you are able to type in an letter that navigates directly to words with that letter. So in the end I decided to skip this, only the test will prove whether this was a good decision.
+
+![buttons](./docs/buttonsv3.png)
+
+![date](./docs/datev3.png)
+
+![time](./docs/timev3.png)
 
 This week we had a second testing session with Marijn.
 **NOTE** The feedback is actually notated in Dutch and has to be updated to English.
