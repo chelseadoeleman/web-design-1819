@@ -255,4 +255,4 @@ Groote aangepast van de datepicker, zodat Marijn hier makkelijk op kan klikken.
 * [Node-fetch](https://www.npmjs.com/package/node-fetch)
 
 ## License
-This repository is licensed as [MIT](LICENSE) by [Chelsea Doeleman](https://github.com/chelseadoeleman).
+This repository is licensed as [MIT](LICENSE) @ [Chelsea Doeleman](https://github.com/chelseadoeleman).
