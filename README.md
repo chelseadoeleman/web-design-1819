@@ -12,10 +12,9 @@
 ## Table of Contents
 * **[How to install](#how-to-install)**
 * **[How to use](#how-to-use)**
-* **[Features](#features)**
 * **[User scenario](#user-scenario)**
 * **[User interface design principles](#user-interface-design-principles)**
-* **[Checklist](#checklist)**
+* **[Feedback](#feeback)**
 * **[Resources](#resources)**
 * **[License](#license)**
 
