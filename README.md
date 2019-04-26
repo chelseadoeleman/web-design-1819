@@ -1,6 +1,13 @@
 # Web Design | 
 
-**Coming soon**
+**Improve an certain feature of a webpage, that might be difficult for Marijn to use. Marijn is motor impaired and has some difficulty navigating small features on webpages. In this course I decided to improve a datepicker for Marijn and keep the following in mind:**
+
+* **Study situation**
+* **Ignore Conventions**
+* **Prioritise Identity**
+* **Add nonsense**
+
+![index](./docs/indexv3.png)
 
 ## Table of Contents
 * **[How to install](#how-to-install)**
