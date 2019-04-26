@@ -232,6 +232,10 @@ Helaas ben ik hier niet meer aan toegekomen, maar had de volgende features er gr
 * Makkelijk kunnen switchen van trackpad naar toetsenbord, dus ga door naar de volgende focus style met het keyboard op de plek waar je gebleven bent op die pagina. Detecteer dus je locatie van de gebruiker op een pagina en ga naar de dichtsbijzijnde focus style. Dit voorkomt dat de gebruiker weer vanaf bovenaan moet beginnen met het navigeren van de paigna.
 
 * Elke keer als je naast een button klikt met een bepaald margin deze steeds groter maken en dan weer terug veranderen naar de oude grootte
+
+![date](./docs/datev4.png)
+
+Groote aangepast van de datepicker, zodat Marijn hier makkelijk op kan klikken.
     
 
 </details>
