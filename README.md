@@ -7,6 +7,8 @@
 * **Prioritise Identity**
 * **Add nonsense**
 
+[Link to application](https://datepicker-v4.netlify.com)
+
 ![index](./docs/indexv3.png)
 
 ## Table of Contents
@@ -178,7 +180,7 @@ This week we actually got to test with Marijn.
 <details>  
     <summary>Week 3</summary>
 
-This week I solely focused on making the buttons bigger, so that Marijn is also able to use his trackpad to navigate through the application and adding hover styles that were previously only focus styles, because I thought he would only use his keyboard. 
+This week I solely focused on making the buttons bigger, so that Marijn is also able to use his trackpad to navigate through the application and adding hover styles that were previously only focus styles, because I thought he would only use his keyboard. I also made sure he can use the application in safari instead of just chrome
 
 The I tried to make an dropdown where he will be able to use the right side to of the keyboard to go up in the dropdown and left side to go down. However I found that native form controls are pretty hard to manipulate. Also you would lose the feature where you are able to type in an letter that navigates directly to words with that letter. So in the end I decided to skip this, only the test will prove whether this was a good decision.
 
