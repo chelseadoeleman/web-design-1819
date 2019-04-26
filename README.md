@@ -129,7 +129,7 @@ On this page you can see some sort of explanation how the user is able to naviga
 ![time](./docs/timev2.png)
 
 This week we actually got to test with Marijn. 
-**NOTE** the feedback is actually notated in Dutch and has to be updated to English.
+**NOTE** The feedback is actually notated in Dutch and has to be updated to English.
 
 ## Feedback
 
@@ -169,8 +169,12 @@ This week we actually got to test with Marijn.
 <details>  
     <summary>Week 3</summary>
 
-This week we had a second session with Marijn.
-**NOTE** the feedback is actually notated in Dutch and has to be updated to English.
+This week I solely focused on making the buttons bigger, so that Marijn is also able to use his trackpad to navigate through the application and adding hover styles that were previously only focus styles, because I thought he would only use his keyboard. 
+
+The I tried to make an dropdown where he will be able to use the right side to of the keyboard to go up in the dropdown and left side to go down. However I found that native form controls are pretty hard to manipulate. Also you would lose the feature where you are able to type in an letter that navigates directly to words with that letter. So in the end I decided to skip this, only the test will prove whether this was a good decision.
+
+This week we had a second testing session with Marijn.
+**NOTE** The feedback is actually notated in Dutch and has to be updated to English.
 
 ## Feedback
 
@@ -196,8 +200,8 @@ Toetsen die dicht bij elkaar liggen zijn chill.
 
 **Eigen Feeback**
 * Knoppen zijn groot genoeg.
-* Datum invullen ging gemakkelijk.
-* Dropdowns werken beter dan input velden, omdat de waardes hiervan moeilijk te bewerken zijn, wanneer je per ongeluk iets ander in toetst.
+* Datum invullen ging gemakkelijk, gebruikt inderdaad het keyboard om snel door de dropdown te navigeren door het invullen van het eerste cijfer of letter.
+* Dropdowns werken beter dan input velden, omdat de waardes hiervan moeilijk te bewerken zijn wanneer je per ongeluk iets anders in toetst.
 * Stap voor stap navigeren werkt ook goed.
 
 
