@@ -67,6 +67,14 @@ When opening the website Marijn is able to navigate the site quite easily with h
 <details>  
     <summary>Week 1</summary>
 
+This is my first version of a datepicker where I divided a datepicker into multiple steps with **BIG** buttons to match. I did so that the user can easily make mistakes and come back to that element to improve his answer. I also made an feature where the user is able to fill in the date input with his whole keyboard. So the right side is made to increase the value and the left side to decrease. I also found that focus styles are very important, so the user is able to see where he is in the page.
+
+![index](./docs/indexv1.png)
+
+![date](./docs/datev1.png)
+
+![time](./docs/timev1.png)
+
 ## Feedback
 
 *   Give some sort of explanation for certain feature, that the user might not understand. For example the **finder** interface on Mac OS. Where the user is able to make his own navigation and how much explantion they would like at certain icons.
@@ -76,6 +84,11 @@ When opening the website Marijn is able to navigate the site quite easily with h
 
 <details>  
     <summary>Week 2</summary>
+
+For my concept I came up with making an appointment at the hairdresser, because this seemed like a basic thing Marijn will probably do, whether he has a hairdresser at home or he goes to visit one.
+I still divided the whole process into multiple steps and made a progressbar on the side where he can track his position when navigating the page. To see how many steps he has to accomplish before he has an appointment.
+
+He is also able to use the spacebar to navigate the page instead of just tab, to make certain elements focussable. I also kept in the feature of dividing the keyboard into two section to increase and decrease the value of the input fields, where he has to fill in the date.
 
 This week we actually got to test with Marijn. 
 **NOTE** the feedback is actually notated in Dutch and has to be updated to English.
