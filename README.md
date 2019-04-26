@@ -206,7 +206,9 @@ Toetsen die dicht bij elkaar liggen zijn chill.
 
 
 
-**Nieuwe concept ideeën**
+**Nieuwe concept ideeën ADD NONSENSE**
+Helaas ben ik hier niet meer aan toegekomen, maar had de volgende features er graag nog in willen verwerken.
+
 * Voeg geluiden toe wanneer de focus per ongeluk verloren gaat zodat de gebruiker weet dat hij de focus er opnieuw op moet zetten (hoofdbewegingen zorgen ervoor dat er soms iets op het scherm niet gezien wordt)
 
 * Makkelijk kunnen switchen van trackpad naar toetsenbord, dus ga door naar de volgende focus style met het keyboard op de plek waar je gebleven bent op die pagina. Detecteer dus je locatie van de gebruiker op een pagina en ga naar de dichtsbijzijnde focus style. Dit voorkomt dat de gebruiker weer vanaf bovenaan moet beginnen met het navigeren van de paigna.
