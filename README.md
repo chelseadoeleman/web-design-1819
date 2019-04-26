@@ -118,6 +118,8 @@ I still divided the whole process into multiple steps and made a progressbar on 
 
 He is also able to use the spacebar to navigate the page instead of just tab, to make certain elements focussable. I also kept in the feature of dividing the keyboard into two section to increase and decrease the value of the input fields, where he has to fill in the date. 
 
+[Online application](https://datepicker-v2.netlify.com)
+
 Here are some elements of the page that are the most important.
 
 ![buttons](./docs/buttonsv2.png)
@@ -172,6 +174,8 @@ This week we actually got to test with Marijn.
 This week I solely focused on making the buttons bigger, so that Marijn is also able to use his trackpad to navigate through the application and adding hover styles that were previously only focus styles, because I thought he would only use his keyboard. 
 
 The I tried to make an dropdown where he will be able to use the right side to of the keyboard to go up in the dropdown and left side to go down. However I found that native form controls are pretty hard to manipulate. Also you would lose the feature where you are able to type in an letter that navigates directly to words with that letter. So in the end I decided to skip this, only the test will prove whether this was a good decision.
+
+[Online application](https://datepicker-v3.netlify.com)
 
 ![buttons](./docs/buttonsv3.png)
 
@@ -229,7 +233,6 @@ Helaas ben ik hier niet meer aan toegekomen, maar had de volgende features er gr
 
 * [npm](https://docs.npmjs.com/cli/run-script)
 * [markdown](https://guides.github.com/features/mastering-markdown/)
-* [Gulp](https://gulpjs.com/)
 * [Ejs](https://ejs.co/)
 * [Nodemon](https://nodemon.io/)
 * [Express](https://expressjs.com/)
