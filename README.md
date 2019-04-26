@@ -90,6 +90,7 @@ This is my first version of a datepicker where I divided a datepicker into multi
 * The datepicker is a very usefull user case for Marijn, so try to itterate on this. Think of a concept around it.
 
 **Things to know about Marijn**
+
 Unfortunately Marijn wasn't able to make it the first week, but luckily we could ask Vasilis some questions about Marijn
 
 * Macbook pro
@@ -223,6 +224,7 @@ Toetsen die dicht bij elkaar liggen zijn chill.
 
 
 **Nieuwe concept ideeën ADD NONSENSE**
+
 Helaas ben ik hier niet meer aan toegekomen, maar had de volgende features er graag nog in willen verwerken.
 
 * Voeg geluiden toe wanneer de focus per ongeluk verloren gaat zodat de gebruiker weet dat hij de focus er opnieuw op moet zetten (hoofdbewegingen zorgen ervoor dat er soms iets op het scherm niet gezien wordt)
