@@ -14,7 +14,7 @@
 * **[How to use](#how-to-use)**
 * **[User scenario](#user-scenario)**
 * **[User interface design principles](#user-interface-design-principles)**
-* **[Feedback](#feeback)**
+* **[Feedback](#feedback)**
 * **[Resources](#resources)**
 * **[License](#license)**
 
